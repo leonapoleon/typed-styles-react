@@ -6,6 +6,7 @@
   "author": "github/leonapoleon",
   "license": "MIT",
   "dependencies": {
+    "inline-style-prefixer": "^3.0.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4"
   },
@@ -18,5 +19,9 @@
     "react-dom": "^15.5.4",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p"
   }
 }
